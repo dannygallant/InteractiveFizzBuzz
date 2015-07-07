@@ -1,5 +1,14 @@
 $(document).ready(function(){
 
+var maxValue = parseInt(prompt('Enter a number between 20 and 100 for the upper limit of FizzBuzz'));
+
+if (maxValue !== parseInt(maxValue)) {
+	alert("FizzBuzz can only accept numerical values. Please re-enter an integer.");
+}
+console.log(maxValue);
+
+fizzBuzz(maxValue);
+
 function fizzBuzz(max) {
 for (i = 1; i <= max; i++) {
 	if (i%3 === 0 && i%5 === 0) {
@@ -17,8 +26,6 @@ for (i = 1; i <= max; i++) {
 	}
   }
 }
-
-var maxValue = prompt('enter a number ')
 
 
 });
